@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Rushu's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <!-- <li><a href="/">About</a></li> -->
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+                <ul>
+                    <li><a class="linkendinImg" href="https://www.linkedin.com/feed/"><img src="pic/linkedin.png" alt=""></a></li>
+                    <li><a class="facebookImg"><img src="pic/facebook.png" alt=""></a></li>
+                    <li><a class="githubImg"><img src="pic/git.png" alt=""></a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Rushu</span> 
+                <div>and I am a passionate</div>
+                <div>Developer</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                    <img id="showImg" src="pic/software-development.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="service" class="secondSection">
+        
+            <span class="text-gray">What I have done so far</span>
+            <h1 id="expertise"></h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="pic/html.png" alt="">
+                    <div class="vertical-title">HTML Developer</div>
+                    <div class="vertical-desc">In web development, I excel in HTML, adept at semantic markup using tags like header tag and footer tag. My skills include crafting organized HTML documents, utilizing tags such as form tag and a tag, and ensuring responsiveness with meta tags and CSS media queries. I validate code for quality, collaborating seamlessly with CSS and JavaScript.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top second-img" src="pic/css.png" alt="">
+                    <div class="vertical-title">CSS Developer</div>
+                    <div class="vertical-desc">In the realm of web styling, I bring expertise in CSS, transforming HTML structures into visually compelling designs. Proficient in selectors, properties, and values, I craft responsive layouts with media queries. My skills extend to flexbox and grid for versatile arrangements, creating cohesive and aesthetically pleasing user interfaces.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pic/js.png" alt="">
+                    <div class="vertical-title">JavaScript Developer</div>
+                    <div class="vertical-desc">In the domain of dynamic web functionality, my proficiency lies in JavaScript. I leverage its power to enhance user interactions, employing event handling, DOM manipulation, and AJAX for seamless updates. With expertise in ES6 features, I create responsive and interactive web applications, ensuring a smooth user experience across diverse platforms.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pic/developer.png" alt="">
+                    <div class="vertical-title">Front-End Developer</div>
+                    <div class="vertical-desc">As a Front-End Developer, I merge HTML, CSS, and JavaScript to craft immersive web experiences. I excel in creating visually appealing interfaces, implementing responsive designs, and ensuring seamless user interactions. Proficient in modern frameworks like React, I transform designs into functional, user-friendly applications, contributing to a compelling online presence.</div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-first">
+                <h3>Rushu's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            
+            
+        </div>
+        <div class="copyright"><h1>© Copyright 2023, Rushu Hang Limbu</h1></div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    
+        let typed = new Typed('#element', {
+          strings: ['Web Developer', 'Web Designer'],
+          typeSpeed: 100,
+        });
+      </script>
+</body>
+</html>
